@@ -1,0 +1,118 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: huang uswe, aver, LIC=QA30X-1XUSJ-FLKCE-ID344-14VUR-YESX4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Community  Version: 5.38.0.0
+Toolchain Path:  D:\keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\STMicroelectronics\keil_done\A3\test.uvprojx
+Project File Date:  05/19/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'D:\keil\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+stm32l476xx_it.c(2): warning: In file included from...
+../A3/main.h(2): warning: In file included from...
+D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include\stm32l4xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e.
+                                               ^
+D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include\stm32l4xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers
+                                                                    ^
+stm32l476xx_it.c(2): warning: In file included from...
+../A3/main.h(2): warning: In file included from...
+D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include\stm32l4xx.h(150): warning: In file included from...
+D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h(10): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+stm32l476xx_it.c(2): warning: In file included from...
+../A3/main.h(3): warning: In file included from...
+./Drivers\gpio_hori.h(7): warning: no newline at end of file [-Wnewline-eof]
+void gpio_hori_init(void);
+                          ^
+stm32l476xx_it.c(2): warning: In file included from...
+../A3/main.h(37): warning: no newline at end of file [-Wnewline-eof]
+        
+        ^
+stm32l476xx_it.c(17): warning: passing 'volatile char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        UART2_SendString(&cmd);
+                         ^~~~
+../A3/main.h(27): note: passing argument to parameter 'string' here
+void UART2_SendString (char *string);
+                             ^
+6 warnings generated.
+compiling stm32l476xx_it.c...
+linking...
+Program Size: Code=1852 RO-data=524 RW-data=4 ZI-data=1644  
+".\Objects\test.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
+                Keil.ARM_Compiler.1.7.2
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDOUT Variant: Breakpoint Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.1.pack
+                Keil.STM32L4xx_DFP.2.6.1
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+   * Component: Common Version: 1.13.0
+   * Component: RCC Version: 1.13.0
+   * Component: USART Version: 1.13.0
+   * Component: Startup Version: 1.3.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  D:/keil/pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include
+  D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/STM32L4xx_HAL_Driver/Inc
+  D:/keil/pack/Keil/STM32L4xx_DFP/2.6.1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:Breakpoint:1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Device:STM32Cube LL:Common:1.13.0
+
+   * Component: Keil::Device:STM32Cube LL:RCC:1.13.0
+      Source file:   Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.c
+
+   * Component: Keil::Device:STM32Cube LL:USART:1.13.0
+      Source file:   Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.c
+
+   * Component: Keil::Device:Startup:1.3.1
+      Include file:  Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32L4xx/Source/Templates/arm/startup_stm32l476xx.s
+      Source file:   MDK/Device/Source/ARM/STM32L4xx_DB_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32L4xx/Source/Templates/system_stm32l4xx.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
